@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>TASK_7</title>
+    
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h1>Online Store</h1>
+            <button><a href="./admin.html">Admin Panel</a></button>
+        </div>
+    </nav>
+    <section>
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search by name">
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="clothes">Clothes</option>
+                <option value="electronics">Electronics</option>
+            </select>
+            <select id="priceSort">
+                <option value="none">Sort by price</option>
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+        </div>
+    </section>
+    <section>
+        <div class="slider">
+            <button class="left"><img src="./assets/img/arrow-left-solid.svg"></button>
+            <div class="slides" id="productSlider"></div>
+            <button class="right"><img src="./assets/img/arrow-right-solid.svg"></button>
+            <div class="dots"></div>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

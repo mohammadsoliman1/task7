@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ADMIN</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar navAdmin">
+            <h1>Dashboard</h1>
+            <button><a href="./index.html" >Back to Store</a></button>
+        </div>
+    </nav>
+    <section>
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Product Name" >
+            <input type="number" id="price" placeholder="Price" >
+            <select id="category">
+                <option value="clothes">Clothes</option>
+                <option value="electronics">Electronics</option>
+            </select>
+            <input type="text" id="image" placeholder="Image URL">
+            <button type="submit">Add Product</button>
+        </form>
+    </section>
+    <section>
+        <table class="products">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTable"></tbody>
+        </table>
+    </section>
+    <script src="./assets/js/admin.js"></script>
+</body>
+</html>
